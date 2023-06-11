@@ -20,14 +20,12 @@
     			<!-- Tu navegador no soporta la reproducción de audio. -->
 		</audio>
 
-		<script>
-			function reloadOnce() {
-			if (!sessionStorage.getItem('audioReloaded')) {
-			sessionStorage.setItem('audioReloaded', true);
-			location.reload();
-			}
-			}
-		</script>
+  		<script>
+			document.addEventListener('click', function() {
+			var audio = document.getElementById('audio');
+			audio.play();
+			});
+ 		 </script>
 		
 		<div class="row no-gutters">
 			<div class="col-xl-4">
