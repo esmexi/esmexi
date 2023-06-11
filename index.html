@@ -18,9 +18,10 @@
 			<source src="assets/media/sound/sound.ogg" type="audio/ogg">
 		</audio>
 		<script>
-			var audio = document.getElementById("audio");
-			window.addEventListener("load", function() {
-			audio.play();
+			document.addEventListener('DOMContentLoaded', function() {
+			var audio = document.getElementById('audio');
+			audio.autoplay = true;
+			audio.load();
 			});
 		</script>
 		<div class="row no-gutters">
