@@ -13,20 +13,19 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
 	</head>
 	<body>
+		
 		<audio id="audio" autoplay loop>
 			<source src="assets/media/sound/sound.mp3" type="audio/mpeg">
 			<source src="assets/media/sound/sound.ogg" type="audio/ogg">
-			<!-- Tu navegador no soporta la reproducción de audio. -->
+    			<!-- Tu navegador no soporta la reproducción de audio. -->
 		</audio>
+
 		<script>
-   			 var audio = document.getElementById('audio');
-    			// Verificar la compatibilidad del navegador
-			if (audio.canPlayType('audio/mpeg') === '' && audio.canPlayType('audio/ogg') === '') {
-			// Si el navegador no es compatible, ocultar el elemento <audio>
-			audio.style.display = 'none';
-			} else {
-			// Si el navegador es compatible, reproducir el audio
-			audio.play();
+			function reloadOnce() {
+			if (!sessionStorage.getItem('audioReloaded')) {
+			sessionStorage.setItem('audioReloaded', true);
+			location.reload();
+			}
 			}
 		</script>
 		
