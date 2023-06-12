@@ -2,7 +2,7 @@
 <div align="center">
 <h2>👋 Hello, I'm Smexi</h2>
 
-[<img src="https://img.shields.io/badge/twitter-1DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white">](https://twitter.com/aka_smexy)
+[<img src="https://img.shields.io/badge/twitter-1DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white">](https://twitter.com/aka_smexi)
 [<img src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://instagram.com/07.5.01)
 
 </div>
